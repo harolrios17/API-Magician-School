@@ -1,0 +1,51 @@
+<div class="col-md-12 bg-image">
+</div>
+<div class="house-card">
+    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+        <div class="col">
+            <div>
+                <img class="house-img" src="assets/img/slyth.png" alt="">
+                <br>
+                <p class="lead text-f"> {{ houseHp[0] }} members: {{ countStd[0].length }}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img class="house-img" src="assets/img/grif.png" alt="">
+                <br>
+                <p class="lead text-f"> {{ houseHp[1] }} members: {{ countStd[1].length }}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img class="house-img" src="assets/img/raven.png" alt="">
+                <br>
+                <p class="lead text-f"> {{ houseHp[2] }} members: {{ countStd[2].length }}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img class="house-img" src="assets/img/huff.png" alt="">
+                <br>
+                <p class="lead text-f"> {{ houseHp[3] }} members: {{ countStd[3].length }}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3" id="house-button">
+        <div class="col">
+            <button (click)="verEstudiante(houseHp[0])" type="button" class="btn btn-light house-button">See all members</button>
+        </div>
+        <div class="col">
+            <button (click)="verEstudiante(houseHp[1])" type="button" class="btn btn-light house-button">See all members</button>
+        </div>
+        <div class="col">
+            <button (click)="verEstudiante(houseHp[2])" type="button" class="btn btn-light house-button">See all members</button>
+        </div>
+        <div class="col">
+            <button (click)="verEstudiante(houseHp[3])" type="button" class="btn btn-light house-button">See all members</button>
+        </div>
+    </div>
+
+</div>

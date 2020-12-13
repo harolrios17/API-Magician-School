@@ -1,0 +1,16 @@
+.bg-image {
+    padding: 0px;
+    margin: 0px;
+    height: 400px;
+    width: 100%;
+    background-image: url('../../../assets/img/fondo.png');
+}
+
+.house-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    display: block;
+    width: 70%;
+    height: 70%;
+}

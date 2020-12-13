@@ -1,0 +1,24 @@
+<h1>Matches found: <small>{{ id }}</small></h1>
+<hr>
+
+<div class="row animated fadeIn " *ngIf="person.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            <strong>No matches found : {{ id }}</strong>
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let student of person, let i= index">
+        <div class="card h-100">
+            <img [src]="student.image" class="card-img-top" [alt]="student.name">
+            <div class="card-body">
+                <h5 class="card-title">{{ student.name }}</h5>
+                <p class="card-text">{{ student.house }}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">{{ student.house }}</small>
+            </div>
+        </div>
+    </div>
